@@ -3,3 +3,10 @@
 */pulse
 */systemd
 */spotify
+*/Signal
+*/Thunar
+*/xfce4
+
+# Files to exclude
+.config/mimeapps.list
+.config/pavucontrol.ini

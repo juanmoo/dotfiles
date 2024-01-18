@@ -93,11 +93,15 @@ awful.keyboard.append_global_keybindings({
     {description = "decrease brightness", group = "control"}),
 
 
-    awful.key({}, "Print", function() 
+    awful.key({ modkey, alt }, "4", function() 
         awful.util.spawn(home_var .. "/.scripts/ss area", false)
     end,
-    {description = "screenshot", group = "control"}),
+    {description = "area screenshot", group = "control"}),
 
+    awful.key({ modkey, alt }, "3", function() 
+        awful.util.spawn(home_var .. "/.scripts/ss full", false)
+    end,
+    {description = "full-screen screenshot", group = "control"}),
 
     awful.key({}, "XF86AudioRaiseVolume",
             function() awful.spawn("amixer -D pulse set Master 5%+", false) 
