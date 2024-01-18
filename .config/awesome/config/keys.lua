@@ -127,7 +127,7 @@ awful.keyboard.append_global_keybindings({
     {description = "Next Track", group = "control"}),
 
     awful.key({}, "XF86AudioPrev", function()
-        awful.spawn("playerctl prev", false)
+        awful.spawn("playerctl previous", false)
     end,
     {description = "Previous Track", group = "control"}),
 
