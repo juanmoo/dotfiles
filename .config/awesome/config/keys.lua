@@ -116,6 +116,20 @@ awful.keyboard.append_global_keybindings({
     end,
     {description = "mute volume", group = "control"}),
 
+    awful.key({}, "XF86AudioPlay", function()
+        awful.spawn("playerctl play-pause", false)
+    end,
+    {description = "Play/Pause", group = "control"}),
+
+    awful.key({}, "XF86AudioNext", function()
+        awful.spawn("playerctl next", false)
+    end,
+    {description = "Next Track", group = "control"}),
+
+    awful.key({}, "XF86AudioPrev", function()
+        awful.spawn("playerctl prev", false)
+    end,
+    {description = "Previous Track", group = "control"}),
 
     awful.key({modkey }, "F2", function() 
         misc.musicMenu()
