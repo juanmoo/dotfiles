@@ -1,0 +1,4 @@
+# Local Config Dirs
+*/dconf
+*/pulse
+*/systemd
