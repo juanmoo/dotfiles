@@ -42,10 +42,10 @@ awful.keyboard.append_global_keybindings({
 	end,
     { description = "open terminal", group = "launcher" }),
 
-	awful.key({ modkey }, "s", function()
-		awful.spawn(user_likes.music)
-	end,
-    { description = "launch music client", group = "launcher" }),
+--	awful.key({ modkey }, "s", function()
+--		awful.spawn(user_likes.music)
+--	end,
+--    { description = "launch music client", group = "launcher" }),
 
 	awful.key({ modkey }, "b", function()
 		awful.spawn.with_shell(user_likes.web)
@@ -129,7 +129,7 @@ awful.keyboard.append_global_keybindings({
 -- awesome yeah!
 awful.keyboard.append_global_keybindings({
 
-    awful.key({ modkey },       "F1",      hotkeys_popup.show_help,
+    awful.key({ modkey },       "s",      hotkeys_popup.show_help,
               {description="show this help window", group="awesome"}),
 
     awful.key({ modkey, ctrl }, "r", awesome.restart,
@@ -168,6 +168,22 @@ awful.keyboard.append_global_keybindings({
             bling.module.flash_focus.flashfocus(client.focus)
         end,
     {description = "focus right", group = "client"}),
+
+    awful.key({ modkey }, "Up",
+        function ()
+            awful.client.focus.bydirection("up")
+            bling.module.flash_focus.flashfocus(client.focus)
+        end,
+    {description = "focus up", group = "client"}),
+
+
+    awful.key({ modkey }, "Down",
+        function ()
+            awful.client.focus.bydirection("down")
+            bling.module.flash_focus.flashfocus(client.focus)
+        end,
+    {description = "focus down", group = "client"}),
+
 
 
     awful.key({ modkey }, "Tab",
