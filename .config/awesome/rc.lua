@@ -15,11 +15,11 @@ home_var        = os.getenv("HOME")
 user_likes      = {
 
     -- aplications
-    term        = "alacritty",
-    editor      = "alacritty -e " .. "nvim",
+    term        = "kitty",
+    editor      = "kitty -e " .. "nvim",
     code        = "vscode",
     web         = "firefox",
-    music       = "alacritty --class 'music' --config-file " .. home_var .. "/.config/alacritty/ncmpcpp.yml -e ncmpcpp ",
+    music       = "alacritty --class 'music' --config-file " .. home_var .. "/.config/alacritty/ncmpcpp.toml -e ncmpcpp ",
     files       = "thunar",
 
 
