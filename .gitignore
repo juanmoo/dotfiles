@@ -10,3 +10,8 @@
 # Files to exclude
 .config/mimeapps.list
 .config/pavucontrol.ini
+
+# Exclude Logs
+*/logs/
+*/log/
+*.log
