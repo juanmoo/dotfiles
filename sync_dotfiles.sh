@@ -7,15 +7,11 @@ SYNC_CMD="rsync -Cau --exclude '*/.git/'"
 
 SUBDIRS="awesome
 alacritty
-btop
-calibre
-Cursor
 dconf
 gnome-session
 gtk-3.0
 ibus
 kitty
-libreoffice
 mpDris2
 ncmpcpp
 procps
