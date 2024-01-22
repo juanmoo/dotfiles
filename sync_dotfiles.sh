@@ -1,8 +1,8 @@
 #! /bin/bash
 
 # Set up
-LIVE_DIR="/home/juan"
-REPO_DIR=$1
+LIVE_DIR="/home/juan/"
+REPO_DIR="/home/juan/Projects/dotfiles"
 SYNC_CMD="rsync -Cau --exclude '*/.git/'"
 
 SUBDIRS="awesome
