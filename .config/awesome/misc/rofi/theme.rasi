@@ -14,10 +14,10 @@ configuration {
 }
 
 * {
-    background:                     #101012BF;
+    background:                     #FFF4FEBF;
     background-alt:              	#00000000;
-    background-bar:                 #f2f2f215;
-    foreground:                     #f2f2f2EE;
+    background-bar:                 #10101215;
+    foreground:                     #101012EE;
     accent:			            	#3DAEE966;
 }
 
